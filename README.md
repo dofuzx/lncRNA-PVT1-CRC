@@ -1,7 +1,7 @@
 # PVT1 / miR-152-3p in Colorectal Cancer — Manuscript & Computational Archive
 
 结直肠癌中长链非编码 RNA **PVT1** 上调并通过 ceRNA 机制吸附 **miR-152-3p** 的诊断与机制研究。
-本仓库为投稿版（Scientific Reports）稿件及其全部计算数据的归档，可直接上传 GitHub。
+
 
 > Corresponding author: FU Zexian (付泽娴), School of Medicine, Hebei University of Engineering, Handan, China.
 > Email: fuzexian@hebeu.edu.cn
@@ -25,14 +25,14 @@
 ```
 TG/
 ├── manuscript/
-│   └── PVT1_miR152_ScientificReports_投稿版M4.docx   # 主文 + 补充材料（SI 已内嵌）
-├── figures/                                          # 12 张终版配图（主文 + SI）
-│   ├── Fig1_PVT1_box.png  ...  Fig10_IBD_specificity.png
-│   ├── Fig_GSE38389_mir152_paired.png
-│   ├── Fig_L1000CDS2.png        # = Supplementary Fig. S1
-│   ├── Fig_depmap_virtualKO.png
-│   ├── Fig_dual_cohort_axis.png
-│   └── Fig_mir152_corr.png
+│   └── 
+├── figures/                                         
+│   ├──
+│   ├──
+│   ├──
+│   ├──
+│   ├── 
+│   └── 
 ├── results/                                          # 73 个处理结果表（CSV/JSON），支撑全部图表与结论
 │   ├── AUC_summary.csv                  # 各队列 PVT1 诊断 AUC（单探针 1558290_a_at）
 │   ├── N3_meta_result.json              # 诊断 meta 合并 AUC / CI / Q / I² / τ²
@@ -46,7 +46,7 @@ TG/
 │   ├── survival_*.csv, enrichment_*.csv, immune_*.csv, ...
 │   └── ...（其余为各分析模块的中间/汇总结果）
 ├── code/                                             # 45 个分析脚本（Python + R）
-│   ├── gen_draft.py                    # 稿件生成主程序（读取 results/ 渲染 docx）
+│   ├── 
 │   ├── Task12_N3_diagnostic_upgrade.py  # 诊断 meta（含连续性校正 + Hanley-McNeil 方差）
 │   ├── Task17_probe_fix.py              # GPL570 单探针 1558290_a_at 重写
 │   ├── Task14_make_fig8_fig9.py         # 诊断 meta 图
@@ -66,7 +66,7 @@ TG/
 
 ## 3. 稿件与补充材料 / Manuscript & Supplementary Information
 
-主稿件 `manuscript/PVT1_miR152_ScientificReports_投稿版M4.docx` 已内嵌完整 **Supplementary Information**：
+
 
 | 编号 | 内容 | 数据源（位于 `results/`） |
 |------|------|---------------------------|
@@ -75,7 +75,6 @@ TG/
 | Table S2 | IBD 对照队列特征与判别 | `ibd_comparisons.csv`, `ibd_meta.json`, `ibd_probe_qc.csv` |
 | Table S3 | Affymetrix PVT1 探针效度（5 探针逐一评估） | `affy_probe_validity.csv` |
 
-主文含 7 图 + 1 表（满足 Scientific Reports 8 图/表上限）：Fig.1–Fig.5、Fig.7（双队列轴）、Fig.9（诊断 meta）、Fig.10（IBD 特异度）；其中机制与 DepMap 分析经精简后并入主文，药物重定位移至 SI Fig. S1。
 
 ---
 
@@ -123,7 +122,6 @@ TG/
 cd TG
 python code/Task12_N3_diagnostic_upgrade.py   # 诊断 meta（读 results，写 results）
 python code/Task16_IBD_cohorts.py             # IBD 队列（需 data/GEOcache）
-python code/gen_draft.py                       # 生成稿件 docx -> manuscript/
 ```
 Python 依赖见 `requirements.txt`；R 脚本依赖 `limma`、`edgeR`、`Biobase` 等 Bioconductor 包。
 
@@ -132,8 +130,6 @@ Python 依赖见 `requirements.txt`；R 脚本依赖 `limma`、`edgeR`、`Biobas
 ## 6. 本仓库已排除的文件 / Excluded
 
 - `data/`（约 1 GB 原始矩阵/依赖矩阵）—— 体积超限，按 accession 下载。
-- 旧版稿件草稿（M1–M3、v0.1–v0.6）及未用于终稿的中间配图（如 `Fig_N1_*`、`Fig_N3_meta_ROC.png`、旧 `ROC_*.png`）。
-- `.workbuddy/` 项目内部目录。
 
 ---
 
@@ -153,7 +149,7 @@ git push -u origin main
 
 ## 8. 许可 / License
 
-- 稿件、配图与结果数据表：**CC BY 4.0**（署名-相同方式共享）。
+- 稿件、配图与结果数据表：**CC BY 4.0**。
 - 分析代码：**MIT License**。
 详见 `LICENSE`。
 "# -lncRNA-PVT1-CRC" 
