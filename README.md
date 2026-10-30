@@ -157,3 +157,4 @@ git push -u origin main
 - 分析代码：**MIT License**。
 详见 `LICENSE`。
 "# -lncRNA-PVT1-CRC" 
+[![DOI](https://zenodo.org/badge/1439913245.svg)](https://doi.org/10.5281/zenodo.23812014)
